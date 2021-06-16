@@ -59,6 +59,9 @@ import os
 # # co2_df = co2_df.iloc[:,[0,9,10,12]]
 # =============================================================================
 #%%
+import plotly.io as pio
+
+pio.renderers.default='browser'
 pd.options.plotting.backend = "plotly"
 
 import plotly.express as px

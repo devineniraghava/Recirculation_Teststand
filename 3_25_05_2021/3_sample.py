@@ -65,6 +65,9 @@ import os
 #%%
 pd.options.plotting.backend = "plotly"
 
+import plotly.io as pio
+
+pio.renderers.default='browser'
 import plotly.express as px
 
 # df = px.data.stocks()
@@ -169,6 +172,7 @@ for i in cols:
 
 df5.to_excel("reg_resuult_exp_5.xlsx")
 prYellow("The slope results have been saved as reg_resuult_exp_5.xlsx")
+
 
 
 
