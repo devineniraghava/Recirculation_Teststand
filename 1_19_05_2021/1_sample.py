@@ -4,7 +4,6 @@ Created on Thu May 20 09:45:59 2021
 
 @author: Devineni
 """
-from tabulate import tabulate
 import pandas as pd
 pd.options.plotting.backend = "matplotlib"
 
@@ -13,7 +12,7 @@ import matplotlib.pyplot as plt
 
 sensor_list = ['1c', '3b', '2L', '2e', 'außen', '1T', '2a_50', '2c_50', '2d', '4T', '3h', 
      '3L_Kü', '2T', '4L', '3d', '1L', '3a_50']
-pos = pd.read_excel("C:/Users/Devineni/OneDrive - bwedu/6_Recirculation_Teststand/2_20_05_2021/sensor_positions.xlsx")
+pos = pd.read_excel("C:/Users/Raghavakrishna/OneDrive - bwedu/6_Recirculation_Teststand/2_20_05_2021/sensor_positions.xlsx")
 
 #%% get absolute path of all .xlsx files
 

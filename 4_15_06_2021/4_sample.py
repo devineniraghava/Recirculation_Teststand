@@ -15,14 +15,14 @@ def prYellow(skk): print("\033[33;1;m {}\033[00m" .format(skk))
 import os
 
 #%%
+sensor_list = ['1c', '3b', '2L', '2e', 'außen', '1T', '2a_50', '2c_50', '2d', '4T', '3h', 
+     '3L_Kü', '2T', '4L', '3d', '1L', '3a_50']
+pos = pd.read_excel("C:/Users/Raghavakrishna/OneDrive - bwedu/6_Recirculation_Teststand/2_20_05_2021/sensor_positions.xlsx")
+
+#%% get absolute path for the files 
+
 # =============================================================================
-# sensor_list = ['1c', '3b', '2L', '2e', 'außen', '1T', '2a_50', '2c_50', '2d', '4T', '3h', 
-#      '3L_Kü', '2T', '4L', '3d', '1L', '3a_50']
-# pos = pd.read_excel("C:/Users/Devineni/OneDrive - bwedu/6_Recirculation_Teststand/2_20_05_2021/sensor_positions.xlsx")
-# 
-# #%% get absolute path for the files 
-# 
-# location = "C:/Users/Devineni/OneDrive - bwedu/6_Recirculation_Teststand/4_15_06_2021/excel data"
+# location = "C:/Users/Raghavakrishna/OneDrive - bwedu/6_Recirculation_Teststand/4_15_06_2021/excel data"
 # 
 # abs_path = []
 # 
@@ -32,7 +32,6 @@ import os
 #       if '.xlsx' in item:
 #          abs_path.append(os.path.join(r, item))
 # #%%
-# fig , ax = plt.subplots()
 # 
 # df_list = []
 # 
@@ -53,7 +52,7 @@ import os
 # 
 # co2_df = pd.concat(df_list, axis = 1).fillna(0)
 # co2_df = co2_df=co2_df.astype("int")
-# co2_df.to_excel("save1.xlsx")
+# co2_df.to_excel("save4.xlsx")
 # =============================================================================
 #%%
 pd.options.plotting.backend = "plotly"
@@ -64,7 +63,7 @@ pio.renderers.default='browser'
 import plotly.express as px
 
 # df = px.data.stocks()
-df = pd.read_excel("save1.xlsx")
+df = pd.read_excel("save4.xlsx")
 df = df[sorted(df.columns)]
 df2 = df.fillna(0)
 

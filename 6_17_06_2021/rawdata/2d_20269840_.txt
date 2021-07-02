@@ -1,0 +1,5 @@
+THis data file was corrupted for unknown reason. (chamber 2 indoor centre sensor)
+
+Sometimes the data of HOBO sensors are corrupted , you see a message in the app that the data is corrupted.
+
+You also cant export such corrupted data. Hence this text file
