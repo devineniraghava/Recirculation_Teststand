@@ -121,9 +121,6 @@ mega_df["datetime"] = pd.to_datetime(mega_df["datetime"], format = "%Y-%m-%d %H:
 
 #%%
 
-
-
-
 mega_df.to_sql("remus", con = engine, chunksize = 10000, if_exists="replace", index = False)
 
 #%%
